@@ -6,7 +6,7 @@ body {
 
 .outerContainer {
   display: grid;
-  grid-template-rows: 700px 1000px 600px;
+  grid-template-rows: 1200px 1000px 600px;
   grid-template-columns: 1fr;
   grid-template-areas: 
     'topSec'
@@ -25,12 +25,11 @@ body {
   grid-template-areas: 
     'topSpacer1 topContent topSpacer2'
     ;
-  border: 6px solid red;
 }
 
 .topSpacer1 {
   grid-area: topSpacer1;
-  border: 1px solid red;
+
 }
 
 .topContent {
@@ -43,7 +42,6 @@ body {
   grid-template-areas: 
     'contentCol1 contentCol2'
     ;
-  border: 1px solid red;
   
 }
 
@@ -63,20 +61,29 @@ body {
 .picture {
   display: grid;
   grid-template-rows: 4fr 1fr;
-  border: 1px solid green;
+  box-shadow: 8px 8px 5px rgba(136, 136, 136, 0.4);
+  background-image: url('./pexels-alexandre.jpg');
+  /* Adjust background properties as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Set the width and height of the element */
+  width: 100%;
+  z-index: 1;
 }
 
 .topSpace {
   
-  border: 1px solid red;
+
 }
 
 .nameSpace {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 60px;
-  border: 1px solid red;
+  
+  font-size: 70px;
+  color: white;
 }
 
 
@@ -91,6 +98,7 @@ body {
   display: grid;
   grid-area: contentCol2;
   grid-template-rows: 1fr 3fr 1fr;
+  
 }
 
 .topCol2 {
@@ -112,7 +120,9 @@ body {
     '. descSpace4 .'
     ;
 
-  border: 1px solid green;
+  border: 1px solid lightgrey;
+  box-shadow: 8px 8px 5px rgba(136, 136, 136, 0.4);
+  z-index: 0;
 }
 
 .descSpace1 {
@@ -136,23 +146,22 @@ body {
   grid-area: descHeader;
   font-size: 42px;
   align-items: center;
-  border: 1px solid green;
+
 }
 .descMain {
   grid-area: descMain;
-  font-size: 20px;
-  border: 1px solid blue;
+  font-size: 26px;
 }
 .descLinks {
   display: grid;
   grid-area: descLinks;
   grid-template-columns: 6fr 1fr 1fr 1fr 0.6fr;
-  border: 1px solid green;
+
 }
 
 .spaceLeft {
   
-  border: 1px solid green
+  
 }
 
 .gitHub {
@@ -183,7 +192,7 @@ body {
 
 .topSpacer2 {
   grid-area: topSpacer2;
-  border: 1px solid red;
+  
 }
 
 
@@ -758,8 +767,12 @@ body {
   border: 1px solid red;
 }
 .phoneIcon {
-  border: 1px solid red;
+  align-self: center;
+  justify-self: center;
+  width: 35px;
 }
+
+
 .number {
   display: flex;
   align-items: center;
@@ -774,7 +787,10 @@ body {
   border: 1px solid red;
 }
 .mailIcon {
-  border: 1px solid red;
+  align-self: center;
+  justify-self: center;
+  width: 35px;  
+
 }
 .email {
   display: flex;
@@ -790,6 +806,9 @@ body {
 }
 
 .mainGit {
+  align-self: center;
+  justify-self: center;
+  width: 45px; 
   border: 1px solid red;
 }
 .mainLinkedIn {
@@ -808,7 +827,16 @@ body {
 }
 
 .workPhoto {
+  display: flex;
   grid-area: workPhoto;
+  justify-content: end;
+
+  background-image: url('./pexels-alexandre-phone.jpg');
+
+  /* Adjust background properties as needed */
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid red;
 }
 
@@ -839,7 +867,7 @@ body {
       '. contentCol1 .'
       '. contentCol2 .'
       ;
-    border: 1px solid red;
+    
   }
 
   .topSec {
@@ -851,19 +879,24 @@ body {
   
   
   .contentCol1 {
-    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-rows: 0.5fr 6fr 0.5fr;
     margin-right: 0px;
-    border: 1px solid blue;
+    
   }
   
+.bottomCol1 {
+  height: 40px;
+
+}
+
   .contentCol2 {
     grid-template-rows: 1fr 8fr 1fr;
-    border: 1px solid blue;
+    
   }
   
   .outerContainer {
     display: grid;
-    grid-template-rows: 1000px 2800px 900px;
+    grid-template-rows: 2000px 2800px 900px;
     grid-template-columns: 1fr;
     grid-template-areas: 
       'topSec'
