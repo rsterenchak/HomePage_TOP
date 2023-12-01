@@ -6,6 +6,8 @@ import Portait1 from './pexels-alexandre.jpg'
 import printMe from './print.js';
 import Icon3 from './phone-outline.svg';
 import Icon4 from './email-outline.svg';
+import Icon5 from './linkedin-plain.svg';
+import Icon6 from './twitter-original.svg';
 
 
 /* var portrait1 = document.getElementsByClassName('picture');
@@ -60,4 +62,24 @@ element14[0].src = Icon4;
 var element15 = document.getElementsByClassName('mainGit');
 
 element15[0].src = Icon1;
-  // document.body.appendChild(component());
+
+
+var element16 = document.getElementsByClassName('mainLinkedIn');
+element16[0].src = Icon5;
+// mainLinkedIn
+
+var element17 = document.getElementsByClassName('mainTwit');
+element17[0].src = Icon6;
+// mainTwit
+
+var element18 = document.getElementsByClassName('linkedin');
+element18[0].src = Icon1;
+// linkedin
+
+var element19 = document.getElementsByClassName('twitter');
+element19[0].src = Icon5;
+// twitter
+
+var element20 = document.getElementsByClassName('spaceRight');
+element20[0].src = Icon6;
+// spaceRight
